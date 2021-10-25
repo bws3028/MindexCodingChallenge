@@ -55,7 +55,18 @@ public class DataBootstrap {
      * initialized these lists with Employee objects that had null fields for every field but the employeeID.
      * Any level of nesting of Employees within these lists should be capable of being processed due to the use
      * of recursion. This was created in an effort to decrease coupling, increase cohesion and ensure a good
-     * level of encapsulation within the data classes Employee.java and ReportingStructure.java.
+     * level of encapsulation within the data classes Employee.java and ReportingStructure.java by preventing
+     * api calls in a data class method.
+     * 
+     * Improvetments: This method should be improved to help improve performance.
+     *                  Ideally, the employees would be ordered in a way that the ones at the bottom could be
+     *                  created and used to build the ones at the top without having to be recreated. This would
+     *                  require an initial sorting of the lists into something like a dictionairy with the 
+     *                  employeeId as a key and a value of an array of employees that contain the current employee
+     *                  within their directReports indexed by reverse order in the reporting structure (higer up
+     *                  comes later in the array). I chose to prioritize the other functionality, however, as this
+     *                  was not listed in the tasks.
+     * 
      * @param employee: The current employee to be checked and possibly have its directReport Employee list
      *                   modified possibly followed up by the Employees held within their directReport list
      *                   and so on until the base case is met.
