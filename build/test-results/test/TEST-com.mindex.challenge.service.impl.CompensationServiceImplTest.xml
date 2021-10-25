@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mindex.challenge.service.impl.CompensationServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-25T06:24:11" hostname="Benjamins-MacBook-Pro.local" time="0.036">
+  <properties/>
+  <testcase name="testCreateReadUpdate" classname="com.mindex.challenge.service.impl.CompensationServiceImplTest" time="0.036"/>
+  <system-out><![CDATA[2021-10-25 02:24:11.211  INFO 6691 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mindex.challenge.service.impl.CompensationServiceImplTest], using SpringBootContextLoader
+2021-10-25 02:24:11.212  INFO 6691 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.mindex.challenge.service.impl.CompensationServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-25 02:24:11.213  INFO 6691 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.mindex.challenge.service.impl.CompensationServiceImplTest]: CompensationServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-25 02:24:11.214  INFO 6691 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.mindex.challenge.ChallengeApplication for test class com.mindex.challenge.service.impl.CompensationServiceImplTest
+2021-10-25 02:24:11.215  INFO 6691 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-10-25 02:24:11.215  INFO 6691 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@11ec4a26, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@537156a3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3541367d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4114e665, org.springframework.test.context.support.DirtiesContextTestExecutionListener@325a391b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6b47b5bd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@57898476, org.springframework.test.context.event.EventPublishingTestExecutionListener@31c8772c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@52b912ef, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@485af58, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1fb4218a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6d374447, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@77831d64]
+2021-10-25 02:24:11.223 DEBUG 6691 --- [o-auto-1-exec-3] c.m.c.controller.EmployeeController      : Received employee create request for [Employee ID: null
+First Name: John
+LastName: Doe
+Position: Developer
+Department: Engineering
+Direct Reports:null]
+2021-10-25 02:24:11.223 DEBUG 6691 --- [o-auto-1-exec-3] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [Employee ID: null
+First Name: John
+LastName: Doe
+Position: Developer
+Department: Engineering
+Direct Reports:null]
+2021-10-25 02:24:11.231 DEBUG 6691 --- [o-auto-1-exec-4] c.m.c.controller.CompensationController  : Received employee create request for [com.mindex.challenge.data.Compensation@6a1363ae]
+2021-10-25 02:24:11.231 DEBUG 6691 --- [o-auto-1-exec-4] c.m.c.s.impl.CompensationServiceImpl     : Creating compensation [com.mindex.challenge.data.Compensation@6a1363ae]
+2021-10-25 02:24:11.237  INFO 6691 --- [-server-worker2] d.b.mongo.backend.AbstractMongoDatabase  : adding unique _id index for collection compensation
+2021-10-25 02:24:11.238  INFO 6691 --- [-server-worker2] d.b.mongo.backend.AbstractMongoDatabase  : created collection test.compensation
+2021-10-25 02:24:11.242 DEBUG 6691 --- [o-auto-1-exec-5] c.m.c.controller.CompensationController  : Received compensation create request for id [d4faceea-3e60-40b4-a303-d5e3f817fd6f]
+2021-10-25 02:24:11.242 DEBUG 6691 --- [o-auto-1-exec-5] c.m.c.s.impl.CompensationServiceImpl     : Finding compensation with employee with id [d4faceea-3e60-40b4-a303-d5e3f817fd6f]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

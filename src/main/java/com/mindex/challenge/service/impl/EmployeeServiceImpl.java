@@ -9,6 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.UUID;
 
+
+/**
+ * The business logic of {@link com.mindex.challenge.service.EmployeeService}  implementations. Implements methods defined in 
+ * {@link com.mindex.challenge.service.EmployeeService}  used to create EmployeeServices's and store it into a repository, find
+ *  and return an {@link com.mindex.challenge.data.Employee}  based on a given employeeId and update a an {@link com.mindex.challenge.data.Employee} 
+ * based on a given {@link com.mindex.challenge.data.Employee} 
+ */
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
@@ -17,6 +24,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Autowired
     private EmployeeRepository employeeRepository;
 
+    /**
+     * @see EmployeeService
+     */
     @Override
     public Employee create(Employee employee) {
         LOG.debug("Creating employee [{}]", employee);
@@ -27,6 +37,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         return employee;
     }
 
+    /**
+     * @see EmployeeService
+     */
     @Override
     public Employee read(String id) {
         LOG.debug("Creating employee with id [{}]", id);
@@ -40,6 +53,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         return employee;
     }
 
+    /**
+     * @see EmployeeService
+     */
     @Override
     public Employee update(Employee employee) {
         LOG.debug("Updating employee [{}]", employee);
